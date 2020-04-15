@@ -1,6 +1,9 @@
 # TP0
 
 - Paso 0 x
+
+![asd](consinvalgrind.jpg)
+
 - Paso 1 x
 - Paso 2 x
 - Paso 3 x
