@@ -51,7 +51,7 @@ Se puede ver que ahora el sizeof() del struct devuelve 13.
 
 ### Captura de pantalla mostrando los problemas de estilo detectados. Explicar cada uno.
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%201/errorformato.png?raw=true)
 
 - Linea 27 de ‘paso1_wordscounter.c’, falta un espacio entre el ‘while’ y el ‘(’.
 - Linea 41 de ‘paso1_wordscounter.c’, sobra dos espacios entre el ‘(’ y ‘c’.
@@ -65,7 +65,7 @@ Se puede ver que ahora el sizeof() del struct devuelve 13.
 
 ### Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%201/errorcodigo.png?raw=true)
 
 Son todos problemas provenientes de no incluir el archivo donde se encuentran las declaraciones de estos tipos/funciones (paso1_wordscounter.h). Es un problema de compilación, ya que se quieren utilizar sin nunca haber sido declaradas.
 
