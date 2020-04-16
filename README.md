@@ -77,19 +77,23 @@ Porque se ejecutó con el flag -Werror, que trata warnings como errors.
 
 ### Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%202/diffarchivos.png?raw=true)
 
 # completar
 
 ### Captura de pantalla indicando la correcta ejecución de verificación de normas de programación.
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%202/exitonormas.png?raw=true)
 
 ### Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%202/errorpaso2.png?raw=true)
 
-# completar
+- Los errores de las lineas 7, 15 y 20 en 'paso2_wordscounter.h' son producidos por no contar con el #include <> necesario. En este caso con la librería 'stdio.h' alcanza para ambos tipos (FILE y size_t).
+- COMPLETAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR
+- El error de la linea 30 en 'paso2_wordscounter.c' es producido por no incluir la librería 'stdlib.h'.
+
+Son errores en tiempo de compilación.
 
 ## Paso 3
 
