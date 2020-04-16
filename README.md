@@ -53,18 +53,15 @@ Se puede ver que ahora el sizeof() del struct devuelve 13.
 
 # imagen
 
-Linea 27 de ‘paso1_wordscounter.c’, falta un espacio entre el ‘while’ y el ‘(’.
-Linea 41 de ‘paso1_wordscounter.c’, sobra dos espacios entre el ‘(’ y ‘c’.
-Linea 47 de ‘paso1_wordscounter.c’, else debería estar en línea 46 después del ‘}’
-Linea 48 de ‘paso1_wordscounter.c’, falta un espacio entre el ‘if’ y el ‘(’.
-Linea 53 de ‘paso1_wordscounter.c’, sobra espacio entre ‘next_state’ y el ‘;’.
-
-No aparece, pero en la linea 14 de ‘paso1_wordscounter.c’ hay una llave que debería ir en línea 13.
-
-Linea 12 de ‘paso1_main.c’, se recomienda usar ‘snprintf’ en lugar de ‘strcpy’.
-Linea 15 de ‘paso1_main.c’, else debería estar en línea 14 después del ‘}’.
-
-Linea 5 de ‘paso1_wordscounter.h’, comentario muy largo, pasa los 80 caracteres de longitud recomendados.
+- Linea 27 de ‘paso1_wordscounter.c’, falta un espacio entre el ‘while’ y el ‘(’.
+- Linea 41 de ‘paso1_wordscounter.c’, sobra dos espacios entre el ‘(’ y ‘c’.
+- Linea 47 de ‘paso1_wordscounter.c’, else debería estar en línea 46 después del ‘}’
+- Linea 48 de ‘paso1_wordscounter.c’, falta un espacio entre el ‘if’ y el ‘(’.
+- Linea 53 de ‘paso1_wordscounter.c’, sobra espacio entre ‘next_state’ y el ‘;’.
+- No aparece, pero en la linea 14 de ‘paso1_wordscounter.c’ hay una llave que debería ir en línea 13.
+- Linea 12 de ‘paso1_main.c’, se recomienda usar ‘snprintf’ en lugar de ‘strcpy’.
+- Linea 15 de ‘paso1_main.c’, else debería estar en línea 14 después del ‘}’.
+- Linea 5 de ‘paso1_wordscounter.h’, comentario muy largo, pasa los 80 caracteres de longitud recomendados.
 
 ### Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
