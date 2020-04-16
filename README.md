@@ -17,7 +17,7 @@ Valgrind se usa para detectar errores en la memoria. Perdida de memoria o acceso
 
 --leak-check=full y -v se pueden usar para ver más detalles.
 
-# poner imagenes
+# poner imagenes buscar info
 
 ### ¿Qué representa sizeof()? ¿Cuál sería el valor de salida de sizeof(char)y sizeof(int)?
 
@@ -29,17 +29,19 @@ Se puede ver que no siempre se cumple que el sizeof() de una struct es igual a l
 
 Se tiene un struct formado por un int a, un char b y un int* c:
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%200/codigo.png?raw=true)
 
 Como se puede ver, en este caso el int tiene tamaño de 4 bytes, el char de 1 byte y el int* de 8 bytes. La suma de estos sería de 13 bytes, pero se puede ver que el sizeof() del struct definido devuelve 16.
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%200/tam16.png?raw=true)
 
 Este comportamiento se podría modificar agregando al final del struct “\_\_attribute__((packed))”
 
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%200/modificado.png?raw=true)
+
 Se puede ver que ahora el sizeof() del struct devuelve 13.
 
-# imagen
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%200/tam13.png?raw=true)
 
 ### Investigar la existencia de los archivos estándar: STDIN, STDOUT, STDERR. Explicar brevemente su uso y cómo redirigirlos en caso de ser necesario (caracteres > y <) y como conectar la salida estándar de un proceso a la entrada estándar de otro con un pipe (carácter).
 
