@@ -9,7 +9,7 @@ https://github.com/guidobotta/tp0-taller
 
 ### Capturas de pantalla de la ejecución del aplicativo (con y sin Valgrind).
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%200/Captura%20con%20y%20sin%20Valgrind.png?raw=true)
+![](https://github.com/guidobotta/tp0-taller/blob/master/Paso%200/consinvalgrind.png?raw=true)
 
 ### ¿Para qué sirve Valgrind? ¿Cuáles son sus opciones más comunes?
 
