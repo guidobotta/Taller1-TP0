@@ -1,9 +1,10 @@
-# TP0
+# <center> TP0 </center>
 
-# **DAR FORMATO!!**
-BOTTA, Guido Tomas
-Padron: 102103
-https://github.com/guidobotta/tp0-taller
+### <center> BOTTA, Guido Tomas </center>
+
+### <center> Padron: 102103 </center>
+
+### <center> Enlace a Github: https://github.com/guidobotta/tp0-taller </center>
 
 ## Paso 0
 
