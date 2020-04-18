@@ -46,7 +46,17 @@ Se puede ver que ahora el sizeof() del struct devuelve 13.
 
 ### Investigar la existencia de los archivos estándar: STDIN, STDOUT, STDERR. Explicar brevemente su uso y cómo redirigirlos en caso de ser necesario (caracteres > y <) y como conectar la salida estándar de un proceso a la entrada estándar de otro con un pipe (carácter).
 
-# completar
+- La entrada estándar, STDIN (Standard Input), es la vía por donde se envían datos al programa.
+- La salida estándar, STDOUT (Standard Output), determina el destino del resultado de un programa o proceso.
+- El error estándar, STDERR (Standard Error), determina el destino de los errores producidos en un programa o proceso.
+
+Estos archivos pueden ser redirigidos con los caracteres > y < al ejecutar un programa:
+
+- Para redirigir el STDIN, se utiliza < (./main < entrada.txt).
+- Para redirigir el STDOUT, se utiliza > o 1> (./main > salida.txt).
+- Para redirigir el STDERR, se utiliza 2> (./main 2> errores.txt).
+
+El caracter pipe | permite encadenar comandos. La salida de un comando resulta ser la entrada del siguiente. Por ejemplo, se podría hacer que la entrada de un programa sea la salida de la ejecución del mismo (./main | ./main).
 
 ## Paso 1
 
