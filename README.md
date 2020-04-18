@@ -16,9 +16,10 @@
 
 Valgrind se usa para detectar errores en la memoria. Perdida de memoria o accesos indeseados.
 
---leak-check=full y -v se pueden usar para ver más detalles.
-
-# poner imagenes buscar info
+- --tool=mencheck (que viene por defecto)
+- --leak-check=full busca las pérdidas de memoria y entrega información detallada de cada fuga. Las opciones, además de full, pueden ser 'no', 'summary' o 'yes'.
+- --leak-resolution=(low|med|high) muestra información detallada según la opción elegida.
+- --undef-value-errores=(yes|no) indica si se verifican o no las variables no inicializadas.
 
 ### ¿Qué representa sizeof()? ¿Cuál sería el valor de salida de sizeof(char)y sizeof(int)?
 
@@ -90,7 +91,9 @@ Porque se ejecutó con el flag -Werror, que trata warnings como errors.
 
 ![Correcciones paso 1 a 2](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/diffarchivos.png?raw=true)
 
-# completar
+- Se solucionaron los errores en las normas de programación mencionados en el paso 1.
+- En 'paso2_main.c' se agrego el #include "paso2_wordscounter.h", lo que soluciona el problema de la falta de declaración de las funciones contenidas en dicho archivo.
+- Se reemplazo el uso de strcpy por el de memcpy, que permite una restricción a la cantidad de datos a copiar. Aún tiene el error de tomar una longitud variable que puede provocar comportamientos indeseados.
 
 ### Captura de pantalla indicando la correcta ejecución de verificación de normas de programación.
 
@@ -101,7 +104,6 @@ Porque se ejecutó con el flag -Werror, que trata warnings como errors.
 ![Errores de compilación paso 2](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/errorpaso2.png?raw=true)
 
 - Los errores de las lineas 7, 15 y 20 en 'paso2_wordscounter.h' son producidos por no contar con el #include <> necesario. En este caso con la librería 'stdio.h' alcanza para ambos tipos (FILE y size_t).
-- COMPLETAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR
 - El error de la linea 30 en 'paso2_wordscounter.c' es producido por no incluir la librería 'stdlib.h'.
 
 Son errores en tiempo de compilación.
@@ -111,6 +113,9 @@ Son errores en tiempo de compilación.
 a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
 ![Correcciones paso 2 a 3](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/diffpaso2a3.png?raw=true)
+
+- Se agregaron las librerías 'string.h' y 'stdio.h' a 'paso3_wordscounter.h'
+- Se agreg+o la librería 'stdlib.h' a 'paso3_wordscounter.c'
 
 b. Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
@@ -124,17 +129,27 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 ![Correcciones paso 3 a 4](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/diffpaso3a4.png?raw=true)
 
+# completar
+
 b. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘TDA’. Describir los errores reportados por Valgrind.
 
 ![Valgrind paso 4 TDA](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4tda.png?raw=true)
+
+# completar
 
 c. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘Long Filename’. Describir los errores reportados por Valgrind.
 
 ![Valgrind paso 4 Long Filename](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4longfile.png?raw=true)
 
+# completar
+
 d. ¿Podría solucionarse este error utilizando la función strncpy​? ¿Qué hubiera ocurrido con la ejecución de la prueba?
 
+# completar
+
 e. Explicar de qué se trata un segmentation fault​ y un buffer overflow​.
+
+# completar
 
 ## Paso 5
 
@@ -142,11 +157,19 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 ![Correcciones paso 4 a 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/diffpaso4a5.png?raw=true)
 
+# completar
+
 b. Describa el motivo por el que fallan las prueba ‘Invalid File’ y ‘Single Word’. ¿Qué información entrega SERCOM para identificar el error? Realice una captura de pantalla.
+
+# completar
 
 c. Captura de pantalla de la ejecución del comando hexdump​ . ¿Cuál es el último carácter del archivo input_single_word.txt?
 
+# completar
+
 d. Captura de pantalla con el resultado de la ejecución con gdb​ . Explique brevemente los comandos utilizados en gdb​ . ¿Por qué motivo el debugger no se detuvo en el breakpoint de la línea 45: self->words++; ?
+
+# completar
 
 ## Paso 6
 
@@ -154,9 +177,15 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 ![Correcciones paso 5 a 6](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/diffpaso5a6.png?raw=true)
 
+# completar
+
 b. Captura de pantalla mostrando t odas las entregas realizadas​ , tanto exitosas como fallidas.
 
+# completar
+
 c. Captura de pantalla mostrando la ejecución de la prueba ‘Single Word’ de forma local​ con las distintas variantes indicadas.
+
+# completar
 
 ## Paso 7 (Tomar como conclusión)
 
