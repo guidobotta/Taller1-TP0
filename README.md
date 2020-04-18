@@ -129,23 +129,23 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 ![Correcciones paso 3 a 4](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/diffpaso3a4.png?raw=true)
 
-# completar
+Se definió la funcion 'wordscounter_destroy', aunque no hace nada.
 
 b. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘TDA’. Describir los errores reportados por Valgrind.
 
 ![Valgrind paso 4 TDA](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4tda.png?raw=true)
 
-# completar
+Esta ejecución con valgrind muestra pérdida de memoria en el archivo 'paso4_main.c' en las líneas 14, del FILE* input que no se cierra, y 24, que ejecuta la función 'wordscounter_process', que a su vez ejecuta la función 'wordscounter_next_state', que hace un malloc el cual nunca es liberado.
 
 c. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘Long Filename’. Describir los errores reportados por Valgrind.
 
 ![Valgrind paso 4 Long Filename](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4longfile.png?raw=true)
 
-# completar
+Esta ejecución muestra que se genera un buffer overflow en el buffer char filepath[30], ya que en la función memcpy se está pasando una longitud máxima que depende del string pasado por parámetro, por lo tanto es variable y puede ser mayor al máximo soportado por el buffer.
 
 d. ¿Podría solucionarse este error utilizando la función strncpy​? ¿Qué hubiera ocurrido con la ejecución de la prueba?
 
-# completar
+No, ya que el problema no es la terminación de la cadena del string (la principal diferencia entre memcpy y strncpy). El problema es la limitación de caracteres, ambas funciones pueden pasarse de caracteres y generar un buffer overflow.
 
 e. Explicar de qué se trata un segmentation fault​ y un buffer overflow​.
 
