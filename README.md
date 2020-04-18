@@ -10,7 +10,7 @@
 
 ### Capturas de pantalla de la ejecución del aplicativo (con y sin Valgrind).
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/consinvalgrind.png?raw=true)
+![Ejecución con y sin valgrind](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/consinvalgrind.png?raw=true)
 
 ### ¿Para qué sirve Valgrind? ¿Cuáles son sus opciones más comunes?
 
@@ -30,19 +30,19 @@ Se puede ver que no siempre se cumple que el sizeof() de una struct es igual a l
 
 Se tiene un struct formado por un int a, un char b y un int* c:
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/codigo.png?raw=true)
+![Código completo](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/codigo.png?raw=true)
 
 Como se puede ver, en este caso el int tiene tamaño de 4 bytes, el char de 1 byte y el int* de 8 bytes. La suma de estos sería de 13 bytes, pero se puede ver que el sizeof() del struct definido devuelve 16.
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/tam16.png?raw=true)
+![Resultado código](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/tam16.png?raw=true)
 
 Este comportamiento se podría modificar agregando al final del struct “\_\_attribute__((packed))”
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/modificado.png?raw=true)
+![Struct modificado](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/modificado.png?raw=true)
 
 Se puede ver que ahora el sizeof() del struct devuelve 13.
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/tam13.png?raw=true)
+![Resultado modificado](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%200/tam13.png?raw=true)
 
 ### Investigar la existencia de los archivos estándar: STDIN, STDOUT, STDERR. Explicar brevemente su uso y cómo redirigirlos en caso de ser necesario (caracteres > y <) y como conectar la salida estándar de un proceso a la entrada estándar de otro con un pipe (carácter).
 
@@ -52,7 +52,7 @@ Se puede ver que ahora el sizeof() del struct devuelve 13.
 
 ### Captura de pantalla mostrando los problemas de estilo detectados. Explicar cada uno.
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%201/errorformato.png?raw=true)
+![Problemas de estilo paso 1](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%201/errorformato.png?raw=true)
 
 - Linea 27 de ‘paso1_wordscounter.c’, falta un espacio entre el ‘while’ y el ‘(’.
 - Linea 41 de ‘paso1_wordscounter.c’, sobra dos espacios entre el ‘(’ y ‘c’.
@@ -66,7 +66,7 @@ Se puede ver que ahora el sizeof() del struct devuelve 13.
 
 ### Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%201/errorcodigo.png?raw=true)
+![Errores de compilación paso 1](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%201/errorcodigo.png?raw=true)
 
 Son todos problemas provenientes de no incluir el archivo donde se encuentran las declaraciones de estos tipos/funciones (paso1_wordscounter.h). Es un problema de compilación, ya que se quieren utilizar sin nunca haber sido declaradas.
 
@@ -78,17 +78,17 @@ Porque se ejecutó con el flag -Werror, que trata warnings como errors.
 
 ### Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/diffarchivos.png?raw=true)
+![Correcciones paso 1 a 2](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/diffarchivos.png?raw=true)
 
 # completar
 
 ### Captura de pantalla indicando la correcta ejecución de verificación de normas de programación.
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/exitonormas.png?raw=true)
+![Verificación normas de programación](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/exitonormas.png?raw=true)
 
 ### Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
-![](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/errorpaso2.png?raw=true)
+![Errores de compilación paso 2](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%202/errorpaso2.png?raw=true)
 
 - Los errores de las lineas 7, 15 y 20 en 'paso2_wordscounter.h' son producidos por no contar con el #include <> necesario. En este caso con la librería 'stdio.h' alcanza para ambos tipos (FILE y size_t).
 - COMPLETAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR
