@@ -56,7 +56,7 @@ Estos archivos pueden ser redirigidos con los caracteres > y < al ejecutar un pr
 - Para redirigir el STDOUT, se utiliza > o 1> (./main > salida.txt).
 - Para redirigir el STDERR, se utiliza 2> (./main 2> errores.txt).
 
-El caracter pipe | permite encadenar comandos. La salida de un comando resulta ser la entrada del siguiente. Por ejemplo, se podría hacer que la entrada de un programa sea la salida de la ejecución del mismo (./main | ./main).
+El caracter pipe | permite encadenar comandos. La salida de un comando resulta ser la entrada del siguiente. Por ejemplo, se podría hacer que la salida de un programa "calculo" sea la entrada de un programa "main" (./calculo | ./main).
 
 ## Paso 1
 
@@ -115,6 +115,8 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 b. Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
 ![Errores de compilación paso 3](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/errorpaso3.png?raw=true)
+
+El error sucede porque la función 'wordscounter_destroy' está declarada pero no definida. Es un error de linkeo, ya pasó la etapa de compilación, pudo generar los '.o' pero al querer buscar la función mencionada, se encontró con que no está definida.
 
 ## Paso 4
 
