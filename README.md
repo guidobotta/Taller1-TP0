@@ -130,7 +130,7 @@ c. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba 
 
 d. ¿Podría solucionarse este error utilizando la función strncpy​ ? ¿Qué hubiera ocurrido con la ejecución de la prueba?
 
-e. Explicar de qué se trata un ​ segmentation fault​ y un ​ buffer overflow​ .
+e. Explicar de qué se trata un segmentation fault​ y un buffer overflow​.
 
 ## Paso 5
 
