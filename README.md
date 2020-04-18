@@ -126,9 +126,13 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 b. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘TDA’. Describir los errores reportados por Valgrind.
 
+![Valgrind paso 4 TDA](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4tda.png?raw=true)
+
 c. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘Long Filename’. Describir los errores reportados por Valgrind.
 
-d. ¿Podría solucionarse este error utilizando la función strncpy​ ? ¿Qué hubiera ocurrido con la ejecución de la prueba?
+![Valgrind paso 4 Long Filename](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4longfile.png?raw=true)
+
+d. ¿Podría solucionarse este error utilizando la función strncpy​? ¿Qué hubiera ocurrido con la ejecución de la prueba?
 
 e. Explicar de qué se trata un segmentation fault​ y un buffer overflow​.
 
