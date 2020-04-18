@@ -114,7 +114,7 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 b. Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
-![Errores de compilación paso 3]((https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/errorpaso3.png?raw=true))
+![Errores de compilación paso 3](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/errorpaso3.png?raw=true)
 
 ## Paso 4
 
