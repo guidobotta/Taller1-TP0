@@ -108,7 +108,21 @@ Son errores en tiempo de compilación.
 
 ## Paso 3
 
+a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+
+b. Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
+
 ## Paso 4
+
+a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+
+b. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘TDA’. Describir los errores reportados por Valgrind.
+
+c. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘Long Filename’. Describir los errores reportados por Valgrind.
+
+d. ¿Podría solucionarse este error utilizando la función strncpy​ ? ¿Qué hubiera ocurrido con la ejecución de la prueba?
+
+e. Explicar de qué se trata un ​ segmentation fault​ y un ​ buffer overflow​ .
 
 ## Paso 5
 
