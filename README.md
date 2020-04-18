@@ -110,11 +110,17 @@ Son errores en tiempo de compilación.
 
 a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
+![Correcciones paso 2 a 3](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/diffpaso2a3.png?raw=true)
+
 b. Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
+
+![Errores de compilación paso 3]((https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/errorpaso3.png?raw=true))
 
 ## Paso 4
 
 a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+
+![Correcciones paso 3 a 4](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/diffpaso3a4.png?raw=true)
 
 b. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘TDA’. Describir los errores reportados por Valgrind.
 
@@ -126,6 +132,35 @@ e. Explicar de qué se trata un ​ segmentation fault​ y un ​ buffer overfl
 
 ## Paso 5
 
+a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+
+![Correcciones paso 4 a 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/diffpaso4a5.png?raw=true)
+
+b. Describa el motivo por el que fallan las prueba ‘Invalid File’ y ‘Single Word’. ¿Qué información entrega SERCOM para identificar el error? Realice una captura de pantalla.
+
+c. Captura de pantalla de la ejecución del comando hexdump​ . ¿Cuál es el último carácter del archivo input_single_word.txt?
+
+d. Captura de pantalla con el resultado de la ejecución con gdb​ . Explique brevemente los comandos utilizados en gdb​ . ¿Por qué motivo el debugger no se detuvo en el breakpoint de la línea 45: self->words++; ?
+
 ## Paso 6
 
-## Paso 7
+a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+
+![Correcciones paso 5 a 6](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/diffpaso5a6.png?raw=true)
+
+b. Captura de pantalla mostrando t odas las entregas realizadas​ , tanto exitosas como fallidas.
+
+c. Captura de pantalla mostrando la ejecución de la prueba ‘Single Word’ de forma local​ con las distintas variantes indicadas.
+
+## Paso 7 (Tomar como conclusión)
+
+Revisar el estado de todas las pruebas ejecutadas en SERCOM con el código del paso 6.
+Abrir cada una de las salidas de V
+algrind​ y controlar que no hay errores reportados que no fueran
+detectados como un fallo en la ejecución. Revisar con atención el listado de archivos abiertos al
+finalizar el programa.
+Controlar el código final entregado. Verificar el uso de buenas prácticas de programación y el
+cumplimiento del enunciado del trabajo.
+Proceder con la impresión del código fuente entregado por el SERCOM en la página de entregas y
+adjuntar al informe.
+Recordar utilizar la carátula brindada por la materia en el sitio de la cátedra.
