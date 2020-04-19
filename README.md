@@ -169,7 +169,9 @@ La prueba 'Invalid File' falla ya que el programa retorna '255' en vez de '1'. E
 
 ![Single Word paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/singlewordpaso5.png?raw=true)
 
-# completar
+La prueba 'Single Word' falla porque la prueba espera que la salida del programa sea '1'. En cambio, la ejecución devuelve un 0. Esto se puede observar en las diferencias marcadas en Sercom, como se ve en la siguiente imagen:
+
+![Diferencias paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/diferenciaspaso5.png?raw=true)
 
 c. Captura de pantalla de la ejecución del comando hexdump​. ¿Cuál es el último carácter del archivo input_single_word.txt?
 
