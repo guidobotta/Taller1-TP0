@@ -157,19 +157,31 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 ![Correcciones paso 4 a 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/diffpaso4a5.png?raw=true)
 
-# completar
+- Se eliminó el uso de un buffer y de la función memcpy, y directamente se utilizó el argumento pasado al ejecutar para el nombre del archivo.
+- Se agregó una condición al final de la ejecución del programa que cierra el archivo abierto en caso de que se haya pasado alguno por parámetro.
+- Se cambió el uso de una lista de caracteres guardados en memoria dinámica para saber los delimitadores por una lista de caracteres en memoria estática.
 
 b. Describa el motivo por el que fallan las prueba ‘Invalid File’ y ‘Single Word’. ¿Qué información entrega SERCOM para identificar el error? Realice una captura de pantalla.
 
-# completar
+![Invalid File paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/invalidfilepaso5.png?raw=true)
 
-c. Captura de pantalla de la ejecución del comando hexdump​ . ¿Cuál es el último carácter del archivo input_single_word.txt?
+La prueba 'Invalid File' falla ya que el programa retorna '255' en vez de '1'. Esto ocurre porque esta prueba espera que se devuelva el código de ERROR, que en el archivo main se definió como -1 en vez de 1.
 
-# completar
-
-d. Captura de pantalla con el resultado de la ejecución con gdb​ . Explique brevemente los comandos utilizados en gdb​ . ¿Por qué motivo el debugger no se detuvo en el breakpoint de la línea 45: self->words++; ?
+![Single Word paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/singlewordpaso5.png?raw=true)
 
 # completar
+
+c. Captura de pantalla de la ejecución del comando hexdump​. ¿Cuál es el último carácter del archivo input_single_word.txt?
+
+![Hexdump paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/hexdumppaso5.png?raw=true)
+
+El último caracter del archivo 'input_single_word.txt' es un EOT (0x0000004).
+
+d. Captura de pantalla con el resultado de la ejecución con gdb​ . Explique brevemente los comandos utilizados en gdb​. ¿Por qué motivo el debugger no se detuvo en el breakpoint de la línea 45: self->words++?
+
+![GDB paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/gdbpaso5.png?raw=true)
+
+El debbuger no se detiene en el break de la linea 45 porque nunca llega al if de la linea 44 cumpliendo dicha condición, ya que el último caracter del txt es un EOF (-1).
 
 ## Paso 6
 
