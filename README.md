@@ -193,13 +193,15 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 - Se definieron a través de un #define los delimitadores de palabras.
 - Se cambio el orden de los condicionales en la función wordscounter_next_state para que no ocurra el error de no contar la palabra si se encuentra con un EOF al final de esta.
 
-b. Captura de pantalla mostrando t odas las entregas realizadas​ , tanto exitosas como fallidas.
+b. Captura de pantalla mostrando todas las entregas realizadas​ , tanto exitosas como fallidas.
 
-# completar
+![Entregas Sercom](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/sercompaso6.png?raw=true)
 
 c. Captura de pantalla mostrando la ejecución de la prueba ‘Single Word’ de forma local​ con las distintas variantes indicadas.
 
-# completar
+![Ejecuciones paso 6](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/ejecucionpaso6.png?raw=true)
+
+En la ejecución con la forma './tp < input_single_word.txt > output_single_word.txt' se redirige la salida, creando un .txt cuyo contenido es '1', al igual que en las anteriores ejecuciones.
 
 ## Paso 7 (Tomar como conclusión)
 
