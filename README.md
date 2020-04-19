@@ -189,7 +189,9 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 
 ![Correcciones paso 5 a 6](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/diffpaso5a6.png?raw=true)
 
-# completar
+- Se cambió la definición de ERROR de -1 a 1.
+- Se definieron a través de un #define los delimitadores de palabras.
+- Se cambio el orden de los condicionales en la función wordscounter_next_state para que no ocurra el error de no contar la palabra si se encuentra con un EOF al final de esta.
 
 b. Captura de pantalla mostrando t odas las entregas realizadas​ , tanto exitosas como fallidas.
 
