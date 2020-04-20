@@ -121,7 +121,7 @@ Son errores en tiempo de compilación.
 ![Correcciones paso 2 a 3](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/diffpaso2a3.png?raw=true)
 
 - Se agregaron las librerías 'string.h' y 'stdio.h' a 'paso3_wordscounter.h'
-- Se agreg+o la librería 'stdlib.h' a 'paso3_wordscounter.c'
+- Se agregó la librería 'stdlib.h' a 'paso3_wordscounter.c'
 
 ### Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
