@@ -6,6 +6,12 @@
 
 ### <center> Enlace a Github: https://github.com/guidobotta/tp0-taller </center>
 
+# Introducción
+
+El objetivo de este trabajo es el de introducir al alumno en el sistema de la materia y brindarle la posibilidad de repasar conceptos importantes desarrollados en materias anteriores.
+
+# Desarrollo
+
 ## Paso 0
 
 ### Capturas de pantalla de la ejecución del aplicativo (con y sin Valgrind).
@@ -110,14 +116,14 @@ Son errores en tiempo de compilación.
 
 ## Paso 3
 
-a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+### Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
 ![Correcciones paso 2 a 3](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/diffpaso2a3.png?raw=true)
 
 - Se agregaron las librerías 'string.h' y 'stdio.h' a 'paso3_wordscounter.h'
 - Se agreg+o la librería 'stdlib.h' a 'paso3_wordscounter.c'
 
-b. Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
+### Captura de pantalla indicando los errores de generación del ejecutable. Explicar cada uno e indicar si se trata de errores del compilador o del linker.
 
 ![Errores de compilación paso 3](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%203/errorpaso3.png?raw=true)
 
@@ -125,35 +131,36 @@ El error sucede porque la función 'wordscounter_destroy' está declarada pero n
 
 ## Paso 4
 
-a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+### Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
 ![Correcciones paso 3 a 4](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/diffpaso3a4.png?raw=true)
 
 Se definió la funcion 'wordscounter_destroy', aunque no hace nada.
 
-b. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘TDA’. Describir los errores reportados por Valgrind.
+### Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘TDA’. Describir los errores reportados por Valgrind.
 
 ![Valgrind paso 4 TDA](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4tda.png?raw=true)
 
 Esta ejecución con valgrind muestra pérdida de memoria en el archivo 'paso4_main.c' en las líneas 14, del FILE* input que no se cierra, y 24, que ejecuta la función 'wordscounter_process', que a su vez ejecuta la función 'wordscounter_next_state', que hace un malloc el cual nunca es liberado.
 
-c. Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘Long Filename’. Describir los errores reportados por Valgrind.
+### Captura de pantalla del resultado de ejecución con Valgrind​ de la prueba ‘Long Filename’. Describir los errores reportados por Valgrind.
 
 ![Valgrind paso 4 Long Filename](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%204/valgrindpaso4longfile.png?raw=true)
 
 Esta ejecución muestra que se genera un buffer overflow en el buffer char filepath[30], ya que en la función memcpy se está pasando una longitud máxima que depende del string pasado por parámetro, por lo tanto es variable y puede ser mayor al máximo soportado por el buffer.
 
-d. ¿Podría solucionarse este error utilizando la función strncpy​? ¿Qué hubiera ocurrido con la ejecución de la prueba?
+### ¿Podría solucionarse este error utilizando la función strncpy​? ¿Qué hubiera ocurrido con la ejecución de la prueba?
 
 No, ya que el problema no es la terminación de la cadena del string (la principal diferencia entre memcpy y strncpy). El problema es la limitación de caracteres, ambas funciones pueden pasarse de caracteres y generar un buffer overflow.
 
-e. Explicar de qué se trata un segmentation fault​ y un buffer overflow​.
+### Explicar de qué se trata un segmentation fault​ y un buffer overflow​.
 
-# completar
+- El Segmentation Fault se trata de un intento de acceso a una sección de memoria que no se tiene permiso para modificar. Por ejemplo, si se quiere escribir en memoria de solo lectura.
+- El Buffer Overflow ocurre cuando se quiere escribir en un buffer pero se accede a posiciones fuera del límite de este. Por ejemplo, si se tiene un buffer de 30 elementos y se busca escribir en la posición 31.
 
 ## Paso 5
 
-a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+### Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
 ![Correcciones paso 4 a 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/diffpaso4a5.png?raw=true)
 
@@ -161,7 +168,7 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 - Se agregó una condición al final de la ejecución del programa que cierra el archivo abierto en caso de que se haya pasado alguno por parámetro.
 - Se cambió el uso de una lista de caracteres guardados en memoria dinámica para saber los delimitadores por una lista de caracteres en memoria estática.
 
-b. Describa el motivo por el que fallan las prueba ‘Invalid File’ y ‘Single Word’. ¿Qué información entrega SERCOM para identificar el error? Realice una captura de pantalla.
+### Describa el motivo por el que fallan las prueba ‘Invalid File’ y ‘Single Word’. ¿Qué información entrega SERCOM para identificar el error? Realice una captura de pantalla.
 
 ![Invalid File paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/invalidfilepaso5.png?raw=true)
 
@@ -173,13 +180,13 @@ La prueba 'Single Word' falla porque la prueba espera que la salida del programa
 
 ![Diferencias paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/diferenciaspaso5.png?raw=true)
 
-c. Captura de pantalla de la ejecución del comando hexdump​. ¿Cuál es el último carácter del archivo input_single_word.txt?
+### Captura de pantalla de la ejecución del comando hexdump​. ¿Cuál es el último carácter del archivo input_single_word.txt?
 
 ![Hexdump paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/hexdumppaso5.png?raw=true)
 
 El último caracter del archivo 'input_single_word.txt' es un EOT (0x0000004).
 
-d. Captura de pantalla con el resultado de la ejecución con gdb​ . Explique brevemente los comandos utilizados en gdb​. ¿Por qué motivo el debugger no se detuvo en el breakpoint de la línea 45: self->words++?
+### Captura de pantalla con el resultado de la ejecución con gdb​ . Explique brevemente los comandos utilizados en gdb​. ¿Por qué motivo el debugger no se detuvo en el breakpoint de la línea 45: self->words++?
 
 ![GDB paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/gdbpaso5.png?raw=true)
 
@@ -187,7 +194,7 @@ El debbuger no se detiene en el break de la linea 45 porque nunca llega al if de
 
 ## Paso 6
 
-a. Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
+### Describa en breves palabras las correcciones realizadas respecto de la versión anterior.
 
 ![Correcciones paso 5 a 6](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/diffpaso5a6.png?raw=true)
 
@@ -195,25 +202,12 @@ a. Describa en breves palabras las correcciones realizadas respecto de la versi�
 - Se definieron a través de un #define los delimitadores de palabras.
 - Se cambio el orden de los condicionales en la función wordscounter_next_state para que no ocurra el error de no contar la palabra si se encuentra con un EOF al final de esta.
 
-b. Captura de pantalla mostrando todas las entregas realizadas​ , tanto exitosas como fallidas.
+### Captura de pantalla mostrando todas las entregas realizadas​ , tanto exitosas como fallidas.
 
 ![Entregas Sercom](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/sercompaso6.png?raw=true)
 
-c. Captura de pantalla mostrando la ejecución de la prueba ‘Single Word’ de forma local​ con las distintas variantes indicadas.
+### Captura de pantalla mostrando la ejecución de la prueba ‘Single Word’ de forma local​ con las distintas variantes indicadas.
 
 ![Ejecuciones paso 6](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%206/ejecucionpaso6.png?raw=true)
 
 En la ejecución con la forma './tp < input_single_word.txt > output_single_word.txt' se redirige la salida, creando un .txt cuyo contenido es '1', al igual que en las anteriores ejecuciones.
-
-## Paso 7 (Tomar como conclusión)
-
-Revisar el estado de todas las pruebas ejecutadas en SERCOM con el código del paso 6.
-Abrir cada una de las salidas de V
-algrind​ y controlar que no hay errores reportados que no fueran
-detectados como un fallo en la ejecución. Revisar con atención el listado de archivos abiertos al
-finalizar el programa.
-Controlar el código final entregado. Verificar el uso de buenas prácticas de programación y el
-cumplimiento del enunciado del trabajo.
-Proceder con la impresión del código fuente entregado por el SERCOM en la página de entregas y
-adjuntar al informe.
-Recordar utilizar la carátula brindada por la materia en el sitio de la cátedra.
