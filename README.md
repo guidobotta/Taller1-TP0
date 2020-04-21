@@ -184,13 +184,13 @@ La prueba 'Single Word' falla porque la prueba espera que la salida del programa
 
 ![Hexdump paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/hexdumppaso5.png?raw=true)
 
-El último caracter del archivo 'input_single_word.txt' es un EOT (0x0000004).
+El último caracter del archivo 'input_single_word.txt' es una 'd'.
 
 ### Captura de pantalla con el resultado de la ejecución con gdb​ . Explique brevemente los comandos utilizados en gdb​. ¿Por qué motivo el debugger no se detuvo en el breakpoint de la línea 45: self->words++?
 
 ![GDB paso 5](https://github.com/guidobotta/tp0-taller/blob/master/img/Paso%205/gdbpaso5.png?raw=true)
 
-El debbuger no se detiene en el break de la linea 45 porque nunca llega al if de la linea 44 cumpliendo dicha condición, ya que el último caracter del txt es un EOF (-1).
+El debbuger no se detiene en el break de la linea 45 porque la ejecución nunca llega al if de la linea 44 cumpliendo dicha condición, ya que nunca toma uno de los delimitadores definidos. Cuando llega al final del txt se manda un EOF que termina con la ejecución del programa.
 
 ## Paso 6
 
